@@ -1214,15 +1214,18 @@ function renderDashboard(){
   const dailyMap = {}; ENGINE.computed.forEach(s => { const d = s.bookingDate; if(!dailyMap[d]) dailyMap[d] = 0; dailyMap[d] += s.contribution; });
   const dailyPoints = Object.keys(dailyMap).sort().slice(-14).map(d => ({ label: d.slice(5), value: dailyMap[d] }));
   const totalFuel = ENGINE.computed.reduce((a,s)=>a+(s._pickupCalc||0), 0);
-  const totalCodAll = ENGINE.computed.reduce((a,s) => a + (parseFloat(s.codAmount) || 0), 0);
+   const totalCodAll = ENGINE.computed.reduce((a,s) => a + (parseFloat(s.codAmount) || 0), 0);
+  const _mps = getAllMerchantPaymentSummary();
   const kpiHtml = [
+    kpi('Total COD Amount', fmt(totalCodAll), num(t.count) + ' shipments · COD only (no fees)', 'blue', 'wallet'),
+    kpi('Paid to Merchants', fmt(_mps.totalPaid), _mps.paidCount + ' of ' + _mps.totalMerchants + ' merchants fully paid', 'pos', 'checkCircle'),
+    kpi('Remaining to Pay', fmt(_mps.totalRemaining), _mps.totalRemaining > 0 ? '⚠ Still owed to merchants' : '✓ All settled', _mps.totalRemaining > 0 ? 'red' : 'pos', 'alert'),
     canDo('view_kpi_total_shipments') ? kpi('Total Shipments', num(t.count), `${t.own} own · ${t.thirdParty} partner`, '', 'package') : kpiLocked('Total Shipments'),
     canDo('view_kpi_cod_shipments') ? kpi('COD Shipments', num(t.codService), 'Cash on Delivery', 'lime', 'money') : kpiLocked('COD Shipments'),
     canDo('view_kpi_replacement') ? kpi('Replacement', num(t.replacementService), 'Swap service', 'gold', 'swap') : kpiLocked('Replacement'),
     canDo('view_kpi_picked_up') ? kpi('Picked Up', num(totalPickups), 'All parcels', 'teal', 'package') : kpiLocked('Picked Up'),
     canDo('view_kpi_delivered') ? kpi('Delivered', num(ownDel + tpDel), `${ownDel} own · ${tpDel} partner`, 'lime', 'truck') : kpiLocked('Delivered'),
     canDo('view_kpi_delivered') ? kpi('Returns (RTO)', num(t.rto), t.count > 0 ? (pct(t.rtoRate) + ' return rate') : 'No returns', 'red', 'returnIcon') : kpiLocked('Returns'),
-    canDo('view_kpi_total_shipments') ? kpi('Total COD Value', fmt(totalCodAll), 'All shipments · Order value', 'blue', 'wallet') : kpiLocked('Total COD Value'),
     canDo('view_kpi_pickup_fuel') ? kpi('Pickup Fuel Cost', fmt(totalFuel), `Avg ${fmt2(t.count > 0 ? totalFuel/t.count : 0)}/parcel`, 'gold', 'fuel') : kpiLocked('Pickup Fuel Cost'),
     canDo('view_kpi_shipping_revenue') ? kpi('Shipping Revenue', fmt(t.totalRevenue), `excl. GST`, 'lime', 'money') : kpiLocked('Shipping Revenue'),
     canDo('view_kpi_cod_tax') ? kpi('4% COD Tax', fmt(t.codTax), t.cod>0 ? ('on COD '+fmt(t.cod)) : '—', 'gold', 'receipt') : kpiLocked('4% COD Tax'),
