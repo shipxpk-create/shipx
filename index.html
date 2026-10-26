@@ -85,6 +85,7 @@ svg.ico{display:inline-block;vertical-align:middle;flex-shrink:0;stroke:currentC
 .kpi.gold::before{background:linear-gradient(90deg,var(--gold),#B45309);opacity:1}
 .kpi.blue::before{background:linear-gradient(90deg,var(--blue),#1D4ED8);opacity:1}
 .kpi.purple::before{background:linear-gradient(90deg,var(--purple),#6D28D9);opacity:1}
+.kpi.pos::before{background:linear-gradient(90deg,var(--pos),#22C55E);opacity:1}
 .kpi-label{font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px;display:flex;align-items:center;gap:6px}
 .kpi-label svg.ico{width:14px;height:14px;opacity:.7;transition:transform .5s var(--ease-spring)}
 .kpi-value{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;color:var(--slate);line-height:1.15;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
@@ -186,7 +187,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .bar-row .bar-track{flex:1;height:28px;background:#F1F5F9;border-radius:8px;overflow:hidden}
 .bar-row .bar-fill{height:100%;border-radius:8px;transition:width .8s var(--ease);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:11px;font-weight:700;min-width:40px}
 .bar-row .bar-value{margin-left:auto;font-size:12.5px;font-weight:700;color:var(--slate);font-variant-numeric:tabular-nums;min-width:80px;text-align:right}
-
 .hero-modern{background:#fff;border:1px solid var(--border);border-radius:20px;margin-bottom:20px;position:relative;overflow:hidden;box-shadow:0 1px 2px rgba(31,42,55,.04),0 8px 32px rgba(31,42,55,.06)}
 .hero-modern-strip{height:4px;background:linear-gradient(90deg,var(--lime),var(--teal),var(--lime));background-size:200% 100%;animation:gradientFlow 6s ease infinite}
 .hero-modern-body{padding:24px 28px;position:relative}
@@ -209,7 +209,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .hero-modern-progress-head span:last-child{color:var(--slate);font-variant-numeric:tabular-nums}
 .hero-modern-progress{height:8px;background:#F1F5F9;border-radius:6px;overflow:hidden;position:relative;z-index:1}
 .hero-modern-progress-fill{height:100%;border-radius:6px;transition:width .8s var(--ease)}
-
 .shipx-pay-opt{position:relative;display:block;cursor:pointer}
 .shipx-pay-opt input{position:absolute;opacity:0;pointer-events:none}
 .shipx-pay-opt-inner{background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 10px;text-align:center;transition:all .2s var(--ease);position:relative;height:100%}
@@ -220,7 +219,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .shipx-pay-opt input:checked + .shipx-pay-opt-inner .shipx-pay-opt-icon{background:var(--lime);color:var(--slate);box-shadow:0 0 12px rgba(176,217,0,.4)}
 .shipx-pay-opt-label{font-size:12.5px;font-weight:800;color:#fff;letter-spacing:.2px}
 .shipx-pay-opt-sub{font-size:10px;color:#94A3B8;margin-top:3px;line-height:1.3;font-weight:500}
-
 .money-flow{display:flex;flex-direction:column;gap:10px;padding:4px 0}
 .mf-row{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:14px 18px;background:#F8FAFC;border-radius:12px;transition:all .2s var(--ease);border-left:4px solid transparent}
 .mf-row:hover{transform:translateX(3px)}
@@ -249,7 +247,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .mf-row.out .mf-value{color:var(--neg)}
 .mf-row.sub .mf-value{color:var(--slate)}
 .mf-row.total .mf-value{font-size:24px;color:var(--lime);text-shadow:0 0 20px rgba(176,217,0,.4)}
-
 .tax-split-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);transition:all .3s var(--ease);border:1px solid var(--border);animation:fadeInScale .5s var(--ease)}
 .tax-split-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
 .ts-header{padding:22px 24px;display:flex;align-items:center;gap:14px;color:#fff;position:relative;overflow:hidden}
@@ -269,7 +266,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .ts-row .lbl svg.ico{width:15px;height:15px;color:var(--muted)}
 .ts-row .val{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--slate);font-variant-numeric:tabular-nums;font-size:15px}
 .ts-note{padding:14px 24px;background:linear-gradient(135deg,#F8FAFC,#F1F5F9);border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);line-height:1.55}
-
 .pnl-hero{background:linear-gradient(135deg,var(--slate) 0%,var(--slate-3) 50%,var(--teal-dark) 100%);border-radius:20px;padding:38px 42px;margin-bottom:24px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
 .pnl-hero::after{content:'';position:absolute;top:-100px;right:-100px;width:340px;height:340px;background:radial-gradient(circle,rgba(176,217,0,.22) 0%,transparent 65%);border-radius:50%;animation:float 8s ease-in-out infinite}
 .pnl-hero-inner{position:relative;z-index:1}
@@ -291,7 +287,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .pnl-water-row.net{background:linear-gradient(135deg,var(--slate) 0%,var(--slate-3) 100%);color:#fff;border-radius:12px;margin-top:8px;padding:18px 20px}
 .pnl-water-row.net .l{font-weight:700;color:#fff;font-size:15px}.pnl-water-row.net .v{font-size:22px;color:var(--lime)}
 .pnl-water-row.net.neg .v{color:#FF8F80}
-
 .perparcel{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:0;margin-bottom:18px;box-shadow:var(--shadow-sm);overflow:hidden;transition:all .3s}
 .perparcel:hover{box-shadow:var(--shadow-md)}
 .perparcel-head{padding:22px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
@@ -324,7 +319,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .pp-box .v{font-size:18px;font-weight:800;color:var(--slate);font-variant-numeric:tabular-nums}
 .pp-box.gross{border-color:#86EFAC}.pp-box.gross .l{color:var(--pos)}.pp-box.gross .v{color:var(--pos)}
 .pp-box.fixed{border-color:#FDE68A}.pp-box.fixed .l{color:#B45309}.pp-box.fixed .v{color:#B45309}
-
 .ship-tbl{min-width:2350px}
 .ship-tbl th,.ship-tbl td{vertical-align:middle;text-align:center}
 .ship-tbl thead th{padding:12px 10px}
@@ -334,7 +328,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .ship-tbl tbody tr.date-group-header .dgh-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:11px 16px}
 .ship-tbl tbody tr.date-group-header .dgh-left{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--slate)}
 .ship-tbl tbody tr.date-group-header .dgh-right{display:flex;gap:16px;font-size:12px;color:var(--muted);font-weight:600;flex-wrap:wrap;justify-content:flex-end}
-
 .auth-screen{position:fixed;inset:0;background:linear-gradient(135deg,var(--slate) 0%,var(--slate-3) 50%,var(--teal) 100%);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
 .auth-screen.show{display:flex;animation:fadeInScale .4s var(--ease)}
 .auth-screen::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 20% 30%,rgba(176,217,0,.15) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(49,125,110,.2) 0%,transparent 50%);pointer-events:none}
@@ -353,7 +346,6 @@ td.mono{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:12px}
 .auth-foot{text-align:center;margin-top:16px}
 .auth-foot a{font-size:12.5px;color:var(--teal);font-weight:600;cursor:pointer;text-decoration:none}
 .auth-note{font-size:11px;color:var(--muted);text-align:center;margin-top:20px;line-height:1.6}
-
 .cp-panel{position:fixed;z-index:2000;background:#fff;border:1px solid var(--border-2);border-radius:14px;box-shadow:0 20px 48px rgba(31,42,55,.22);overflow:hidden;display:none;font-size:13.5px}
 .cp-panel.show{display:block;animation:fadeInScale .15s var(--ease)}
 .cp-list{max-height:272px;overflow-y:auto;padding:6px}
@@ -674,8 +666,13 @@ function currentUsername(){ const u = getStoredUser(); return u ? (u.username ||
 function canDo(perm){ const u = getStoredUser(); if(!u) return false; if(u.role === 'admin') return true; return !!(u.permissions && u.permissions[perm]); }
 function canManageUsers(){ return canDo('manage_users'); }
 
-function getMerchantPaymentStatus(merchantId){ const list = ENGINE.computed.filter(s => s.merchantId === merchantId && (s.status === 'Delivered' || s.status === 'RTO')); const expected = list.reduce((a, b) => a + Math.abs(b.netSettlement || 0), 0); const payments = (STATE.bankPayments || []).filter(p => p.merchantId === merchantId); const received = payments.reduce((a, b) => a + (b.amount || 0), 0); return { expected, received, remaining: expected - received, isPaid: expected > 0 && received >= expected }; }
-function getShipmentPaymentStatus(s){ if(!s) return { isPaid: false, isUnpaid: true, mode: 'auto', received: 0, expected: 0 }; const mStatus = getMerchantPaymentStatus(s.merchantId); if(s.shipxPaymentStatus === 'paid') return { isPaid: true, isUnpaid: false, mode: 'paid', received: mStatus.received, expected: mStatus.expected }; if(s.shipxPaymentStatus === 'unpaid') return { isPaid: false, isUnpaid: true, mode: 'unpaid', received: mStatus.received, expected: mStatus.expected }; return { isPaid: mStatus.isPaid, isUnpaid: !mStatus.isPaid, mode: 'auto', received: mStatus.received, expected: mStatus.expected }; }
+// ===== FIX 1: Math.abs removed - RTO properly subtracts =====
+function getMerchantPaymentStatus(merchantId){ const list = ENGINE.computed.filter(s => s.merchantId === merchantId && (s.status === 'Delivered' || s.status === 'RTO')); const rawNet = list.reduce((a, b) => a + (b.netSettlement || 0), 0); const expected = Math.max(0, rawNet); const merchantOwes = Math.max(0, -rawNet); const payments = (STATE.bankPayments || []).filter(p => p.merchantId === merchantId); const received = payments.reduce((a, b) => a + (b.amount || 0), 0); return { expected, received, remaining: Math.max(0, expected - received), isPaid: expected === 0 ? true : (received >= expected), rawNet, merchantOwes }; }
+
+// ===== FIX 2: Added 'adjusted' mode =====
+function getShipmentPaymentStatus(s){ if(!s) return { isPaid: false, isUnpaid: true, isAdjusted: false, mode: 'unpaid', received: 0, expected: 0 }; const mStatus = getMerchantPaymentStatus(s.merchantId); if(s.shipxPaymentStatus === 'paid') return { isPaid: true, isUnpaid: false, isAdjusted: false, mode: 'paid', received: mStatus.received, expected: mStatus.expected }; if(s.shipxPaymentStatus === 'adjusted') return { isPaid: false, isUnpaid: false, isAdjusted: true, mode: 'adjusted', received: mStatus.received, expected: mStatus.expected }; return { isPaid: false, isUnpaid: true, isAdjusted: false, mode: 'unpaid', received: mStatus.received, expected: mStatus.expected }; }
+
+// ===== FIX 3: RTO + Paid guard, no fake bank payment =====
 function syncShipmentAutoBankPayment(shipment){
   if(!shipment || !shipment.id) return;
   if(!STATE.bankPayments) STATE.bankPayments = [];
@@ -683,12 +680,16 @@ function syncShipmentAutoBankPayment(shipment){
   const existing = STATE.bankPayments.find(p => p.reference === autoRef);
   if(shipment.shipxPaymentStatus === 'paid'){
     const computed = ENGINE.computed.find(x => x.id === shipment.id);
-    const amount = Math.abs(computed?.netSettlement || 0);
+    if(!computed || computed.status !== 'Delivered'){ if(existing) STATE.bankPayments = STATE.bankPayments.filter(p => p.reference !== autoRef); return; }
+    const amount = computed.netSettlement || 0;
     if(amount > 0){ if(existing){ existing.amount = amount; existing.merchantId = shipment.merchantId; existing.date = existing.date || todayStr(); } else { STATE.bankPayments.push({ id: 'BP-AUTO-' + shipment.id, merchantId: shipment.merchantId, amount: amount, reference: autoRef, date: todayStr(), note: 'Auto: Shipment ' + shipment.id + ' marked as paid', recordedAt: new Date().toISOString(), isAuto: true }); } }
+    else if(existing) { STATE.bankPayments = STATE.bankPayments.filter(p => p.reference !== autoRef); }
   } else if(existing){ STATE.bankPayments = STATE.bankPayments.filter(p => p.reference !== autoRef); }
 }
 function getAllMerchantPaymentSummary(){ let totalDue = 0, totalPaid = 0, totalRemaining = 0, paidCount = 0, unpaidCount = 0; (STATE.merchants || []).forEach(m => { const st = getMerchantPaymentStatus(m.id); if(st.expected > 0){ totalDue += st.expected; totalPaid += st.received; totalRemaining += Math.max(0, st.remaining); if(st.isPaid) paidCount++; else unpaidCount++; } }); return { totalDue, totalPaid, totalRemaining, paidCount, unpaidCount, totalMerchants: paidCount + unpaidCount }; }
-function getShipmentsPaymentSummary(shipments){ let totalExpected = 0, alreadyPaid = 0, stillUnpaid = 0, paidCount = 0, unpaidCount = 0; shipments.forEach(s => { const net = Math.abs(s.netSettlement || 0); const st = getShipmentPaymentStatus(s); totalExpected += net; if(st.isPaid) paidCount++; else { unpaidCount++; stillUnpaid += net; } }); alreadyPaid = totalExpected - stillUnpaid; return { totalExpected, alreadyPaid, stillUnpaid, paidCount, unpaidCount, total: shipments.length }; }
+
+// ===== FIX 4: Math.abs removed =====
+function getShipmentsPaymentSummary(shipments){ let totalExpected = 0, alreadyPaid = 0, stillUnpaid = 0, paidCount = 0, unpaidCount = 0, adjustedCount = 0, merchantOwes = 0; shipments.forEach(s => { const net = s.netSettlement || 0; const st = getShipmentPaymentStatus(s); if(net >= 0){ totalExpected += net; if(st.isPaid) { paidCount++; alreadyPaid += net; } else if(st.isAdjusted) { adjustedCount++; } else { unpaidCount++; stillUnpaid += net; } } else { merchantOwes += -net; } }); return { totalExpected, alreadyPaid, stillUnpaid, paidCount, unpaidCount, adjustedCount, merchantOwes, total: shipments.length }; }
 
 function getAuditLog(){ if(!STATE) return []; return Array.isArray(STATE.auditLog) ? STATE.auditLog : []; }
 function saveAuditLog(list){ if(!STATE) return; STATE.auditLog = list.slice(0, 2000); saveState(); }
@@ -726,8 +727,9 @@ let CLOUD_LAST_ERROR = '';
 window.db = null;
 try { if(typeof firebase !== 'undefined'){ if(!firebase.apps.length){ firebase.initializeApp(firebaseConfig); } window.db = firebase.firestore(); CLOUD_READY = true; console.log('✓ Firebase initialized'); } else { console.warn('Firebase library not loaded — running in local mode.'); } } catch(e){ console.error('Firebase init error:', e); window.db = null; CLOUD_READY = false; CLOUD_LAST_ERROR = e.message || String(e); }
 
-const STORAGE_KEY = 'shipx_finance_v16';
-const VERSION = 34;
+// ===== FIX 5: Version bumped =====
+const STORAGE_KEY = 'shipx_finance_v17';
+const VERSION = 35;
 const DEFAULT_FUEL_PRICE = 250;
 const AUTO_SYNC_INTERVAL_MS = 24 * 60 * 60 * 1000;
 const AUTO_SYNC_CHECK_INTERVAL_MS = 60 * 60 * 1000;
@@ -784,6 +786,8 @@ function startFirebaseSync(){
 function migrateSlabList(sl){ sl = sl || []; const r0 = (sl[0]||{}).rate||0, r1 = (sl[1]||{}).rate||0, ex = (sl[2]||{}).perExtraKg||0; return [{from:0.5,to:1,rate:r0},{from:1.01,to:2,rate:r1},{from:2.01,to:10,rate:0,perExtraKg:ex}]; }
 function migratePricingV3(o){ if(!o.pricing) return; const old = o.pricing; const citySlabs = migrateSlabList(old.citySlabs); const nationwideSlabs = migrateSlabList(old.nationwideSlabs); const needsReview = old.v !== 3; o.pricing = { v:3, needsReview: needsReview || old.needsReview || false, citySlabs, nationwideSlabs }; }
 function ensureUniqueIds(arr, prefix){ const used = new Set(); arr.forEach((x, i) => { if(!x.id || used.has(x.id) || !String(x.id).match(/^[A-Z]+-?\d+$/)){ let n = i + 1; while(used.has(prefix + String(n).padStart(3, '0'))) n++; x.id = prefix + String(n).padStart(3, '0'); } used.add(x.id); }); }
+
+// ===== FIX 6: Auto → Unpaid/Adjusted migration + RTO bank payment cleanup =====
 function migrateState(s){
   if(!s) return s;
   if(!Array.isArray(s.vendors) || !s.vendors.length) s.vendors = JSON.parse(JSON.stringify(EMPTY.vendors));
@@ -811,7 +815,8 @@ function migrateState(s){
   (s.overheads||[]).forEach(o => { if(!o.id) o.id = 'OH' + Math.random().toString(36).slice(2,10); if(o.quantity === undefined || o.quantity === null || o.quantity === '') o.quantity = 1; if(!o.date) o.date = todayStr(); if(isNaN(parseFloat(o.amount))) o.amount = 0; });
   (s.riderCashSubmissions||[]).forEach(c => { if(!c.id) c.id = 'CS' + Math.random().toString(36).slice(2,8); if(!c.amount || isNaN(parseFloat(c.amount))) c.amount = 0; if(!c.date) c.date = todayStr(); });
   (s.riders||[]).forEach(r => { if(r.pickupCommission === undefined || r.pickupCommission === null) r.pickupCommission = 0; if(r.deliveryCommission === undefined || r.deliveryCommission === null) r.deliveryCommission = 0; if(r.reattemptCommission === undefined || r.reattemptCommission === null) r.reattemptCommission = 0; });
-  (s.shipments||[]).forEach(sh => { if(sh.referenceId === undefined) sh.referenceId = ''; if(sh.paymentMethod === undefined) sh.paymentMethod = ''; if(sh.settlementStatus === undefined) sh.settlementStatus = 'Pending'; if(sh.serviceType === undefined || sh.serviceType === null || sh.serviceType === '') sh.serviceType = 'COD'; if(sh.shipxPaymentStatus === undefined || sh.shipxPaymentStatus === null || sh.shipxPaymentStatus === '') sh.shipxPaymentStatus = 'auto'; });
+  (s.shipments||[]).forEach(sh => { if(sh.referenceId === undefined) sh.referenceId = ''; if(sh.paymentMethod === undefined) sh.paymentMethod = ''; if(sh.settlementStatus === undefined) sh.settlementStatus = 'Pending'; if(sh.serviceType === undefined || sh.serviceType === null || sh.serviceType === '') sh.serviceType = 'COD'; if(sh.shipxPaymentStatus === undefined || sh.shipxPaymentStatus === null || sh.shipxPaymentStatus === '' || sh.shipxPaymentStatus === 'auto'){ sh.shipxPaymentStatus = (sh.status === 'RTO') ? 'adjusted' : 'unpaid'; } if(sh.status === 'RTO' && sh.shipxPaymentStatus === 'paid'){ sh.shipxPaymentStatus = 'adjusted'; } if(!['paid','unpaid','adjusted'].includes(sh.shipxPaymentStatus)){ sh.shipxPaymentStatus = 'unpaid'; } });
+  if(Array.isArray(s.bankPayments) && Array.isArray(s.shipments)){ const _rtoIds = new Set(s.shipments.filter(sh => sh.status === 'RTO').map(sh => sh.id)); s.bankPayments = s.bankPayments.filter(bp => { if(bp.reference && bp.reference.startsWith('AUTO:')){ const _sid = bp.reference.replace('AUTO:', ''); return !_rtoIds.has(_sid); } return true; }); }
   if(!s.taxSettings) s.taxSettings = { incomeWHT: 2, salesWHT: 2 };
   if(!s.riderAllocation) s.riderAllocation = { pickup: 40, delivery: 50, reattempt: 10 };
   if(!s.monthDays) s.monthDays = 30;
@@ -869,6 +874,7 @@ function fcTotalForDate(date, shipmentsList){ const list = shipmentsList || STAT
 function fcCostForDate(date){ const e = fcEntry(date); if(!e) return 0; return (parseFloat(e.liters) || 0) * (parseFloat(e.price) || 0); }
 function fcPerParcelForDate(date, shipmentsList){ const total = fcTotalForDate(date, shipmentsList); const cost = fcCostForDate(date); return total > 0 ? cost / total : 0; }
 
+// ===== RTO CALCULATION - RETAINED AS-IS (full fee charge) =====
 function calcOneShipment(s, state, eng){
   const isRTO = s.status === 'RTO'; const delivered = s.status === 'Delivered';
   const routeCost = eng.routeCostPerShipment[s.routeId] || 0; const pickupCalcCost = eng.pickupCalcPerParcel[s.bookingDate] || 0; const riderPickupCost = eng.riderPickupCommission[s.riderId] || 0;
@@ -1041,16 +1047,15 @@ function merchantName(id){ const m = STATE.merchants.find(x=>x.id===id); return 
 function statusBadge(s){ if(s==='Delivered') return `<span class="badge b-green">${svgIcon('check', 11)}Delivered</span>`; if(s==='RTO') return `<span class="badge b-red">${svgIcon('returnIcon', 11)}Returned</span>`; if(s==='Pending') return `<span class="badge b-amber">${svgIcon('info', 11)}Pending</span>`; if(s==='In Transit') return `<span class="badge b-blue">${svgIcon('truck', 11)}In Transit</span>`; return `<span class="badge b-gray">${esc(s)}</span>`; }
 function payBadge(status){ if(status === 'Paid') return `<span class="badge b-green">${svgIcon('check', 11)}Paid</span>`; if(status === 'N/A') return `<span class="badge b-gray">N/A</span>`; return `<span class="badge b-amber">${svgIcon('info', 11)}Unpaid</span>`; }
 function serviceBadge(st){ if(st === 'Replacement') return `<span class="badge b-purple">${svgIcon('swap', 11)}Replacement</span>`; return `<span class="badge b-teal">${svgIcon('money', 11)}COD</span>`; }
+
+// ===== FIX 5: Adjusted badge added =====
 function shipxPaidBadgeForShipment(s){
   if(!s) return '';
   const st = getShipmentPaymentStatus(s);
-  const mode = st.mode || 'auto';
-  const modeLabel = mode === 'auto' ? 'Auto (Merchant)' : (mode === 'paid' ? 'Manual: Paid' : 'Manual: Unpaid');
-  if(st.mode === 'paid') return `<span class="badge b-green" title="${modeLabel}">${svgIcon('check', 11)}ShipX Paid</span>`;
-  if(st.mode === 'unpaid') return `<span class="badge b-red" title="${modeLabel}">${svgIcon('alert', 11)}Unpaid</span>`;
-  if(st.isPaid) return `<span class="badge b-green" title="${modeLabel} · Received ${fmt(st.received)} / ${fmt(st.expected)}">${svgIcon('check', 11)}ShipX Paid</span>`;
-  if(st.received > 0) return `<span class="badge b-amber" title="Partial: ${fmt(st.received)} / ${fmt(st.expected)}">${svgIcon('info', 11)}Partial</span>`;
-  return `<span class="badge b-red" title="${modeLabel} · No payment yet">${svgIcon('alert', 11)}Unpaid</span>`;
+  const mode = st.mode || 'unpaid';
+  if(mode === 'paid') return `<span class="badge b-green" title="ShipX paid merchant for this shipment">${svgIcon('check', 11)}ShipX Paid</span>`;
+  if(mode === 'adjusted') return `<span class="badge b-purple" title="RTO — ShipX charges already deducted from merchant total">${svgIcon('swap', 11)}Adjusted</span>`;
+  return `<span class="badge b-red" title="Still owed by ShipX">${svgIcon('alert', 11)}Unpaid</span>`;
 }
 
 function renderPerParcel(t, riderAllow, oh, st){
@@ -1157,6 +1162,7 @@ function renderMerchantInfographic(){
     </div>`;
 }
 
+// ===== FIX 15: Math.abs removed from contributing shipments =====
 function openMerchantPaymentDetail(merchantId){
   if(!canDo('view_merchants') && !canDo('view_settlements') && !canDo('view_bank')){ denyPerm(); return; }
   const m = STATE.merchants.find(x => x.id === merchantId);
@@ -1174,9 +1180,10 @@ function openMerchantPaymentDetail(merchantId){
   const progressBg = isPaid ? 'linear-gradient(90deg,var(--pos),#22C55E)' : (partial ? 'linear-gradient(90deg,var(--gold),#F59E0B)' : 'linear-gradient(90deg,var(--neg),#EF4444)');
   const paymentsHtml = payments.length === 0 ? `<div class="info-note warn" style="margin:0">${svgIcon('info', 18)}No payments recorded yet. Use "Record Payment" to add one.</div>` : `<div class="tbl-wrap" style="max-height:260px;overflow-y:auto"><table style="min-width:auto"><thead><tr><th>Date</th><th class="num">Amount</th><th>Reference</th><th>Note</th></tr></thead><tbody>${payments.map(p => { const isAuto = p.isAuto || (p.reference && String(p.reference).startsWith('AUTO:')); return `<tr><td class="mono"><b>${fmtDate(p.date)}</b></td><td class="num"><b style="color:var(--pos)">${fmt(p.amount)}</b></td><td class="mono small">${p.reference ? esc(p.reference) : '—'}${isAuto ? ' <span class="badge b-teal" style="font-size:9px">AUTO</span>' : ''}</td><td class="small" style="text-align:left">${p.note ? esc(p.note) : '—'}</td></tr>`; }).join('')}</tbody></table></div>`;
   const shipxPaidShips = list.filter(s => getShipmentPaymentStatus(s).isPaid).length;
-  const contributionsHtml = list.length === 0 ? `<div class="info-note warn" style="margin:0">No delivered or returned shipments yet.</div>` : `<div class="tbl-wrap" style="max-height:320px;overflow-y:auto"><table style="min-width:auto"><thead><tr><th>ID</th><th>Date</th><th>Status</th><th class="num">Net Settlement</th><th>ShipX Paid?</th></tr></thead><tbody>${list.slice().sort((a, b) => String(b.bookingDate || '').localeCompare(String(a.bookingDate || ''))).map(s => `<tr><td class="mono">${esc(s.id)}</td><td class="mono">${fmtDate(s.bookingDate)}</td><td>${statusBadge(s.status)}</td><td class="num"><b>${fmt(Math.abs(s.netSettlement || 0))}</b></td><td>${shipxPaidBadgeForShipment(s)}</td></tr>`).join('')}</tbody></table></div>`;
+  const shipxAdjustedShips = list.filter(s => getShipmentPaymentStatus(s).isAdjusted).length;
+  const contributionsHtml = list.length === 0 ? `<div class="info-note warn" style="margin:0">No delivered or returned shipments yet.</div>` : `<div class="tbl-wrap" style="max-height:320px;overflow-y:auto"><table style="min-width:auto"><thead><tr><th>ID</th><th>Date</th><th>Status</th><th class="num">Net Settlement</th><th>ShipX Paid?</th></tr></thead><tbody>${list.slice().sort((a, b) => String(b.bookingDate || '').localeCompare(String(a.bookingDate || ''))).map(s => { const net = s.netSettlement || 0; return `<tr><td class="mono">${esc(s.id)}</td><td class="mono">${fmtDate(s.bookingDate)}</td><td>${statusBadge(s.status)}</td><td class="num" style="color:${net>=0?'var(--pos)':'var(--neg)'}"><b>${net>=0?'+':''}${fmt(net)}</b></td><td>${shipxPaidBadgeForShipment(s)}</td></tr>`; }).join('')}</tbody></table></div>`;
   openModal('Payment Details — ' + m.name, `
-    <div class="info-note ${isPaid ? 'ok' : (partial ? 'warn' : '')}" style="margin-bottom:18px">${svgIcon(isPaid ? 'checkCircle' : (partial ? 'info' : 'alert'), 18)}<div><div style="font-weight:800;font-size:14px">${esc(m.name)} · ${esc(m.city || '—')}</div><div style="margin-top:4px;font-size:12.5px">Status: <b style="color:${statusColor}">${statusLabel}</b> · ${delivered.length} delivered · ${rto.length} returned · ${shipxPaidShips} shipment(s) marked ShipX Paid</div></div></div>
+    <div class="info-note ${isPaid ? 'ok' : (partial ? 'warn' : '')}" style="margin-bottom:18px">${svgIcon(isPaid ? 'checkCircle' : (partial ? 'info' : 'alert'), 18)}<div><div style="font-weight:800;font-size:14px">${esc(m.name)} · ${esc(m.city || '—')}</div><div style="margin-top:4px;font-size:12.5px">Status: <b style="color:${statusColor}">${statusLabel}</b> · ${delivered.length} delivered · ${rto.length} returned · ${shipxPaidShips} paid · ${shipxAdjustedShips} adjusted</div></div></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px">
       <div style="background:#F8FAFC;border:1.5px solid var(--border);border-radius:12px;padding:16px 18px"><div style="font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px">Total Due</div><div style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:var(--slate);font-variant-numeric:tabular-nums">${fmt(st.expected)}</div><div style="font-size:11px;color:var(--muted);margin-top:4px">ShipX owes merchant</div></div>
       <div style="background:#F0FDF4;border:1.5px solid #86EFAC;border-radius:12px;padding:16px 18px"><div style="font-size:10.5px;font-weight:700;color:var(--pos);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px">Already Paid</div><div style="font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;color:var(--pos);font-variant-numeric:tabular-nums">${fmt(st.received)}</div><div style="font-size:11px;color:var(--pos);margin-top:4px">${progress.toFixed(1)}% completed</div></div>
@@ -1278,6 +1285,7 @@ function openPickupCalcForm(date){
 function savePickupEntry(originalDate){ const isEdit = !!originalDate; if(isEdit && !canDo('edit_pickup_entry')){ denyPerm(); return; } if(!isEdit && !canDo('add_pickup_entry')){ denyPerm(); return; } const date = document.getElementById('pcDate').value; const price = parseFloat(document.getElementById('pcPrice').value) || 0; const liters = parseFloat(document.getElementById('pcLiters').value) || 0; if(!date){ toast('Date required', 'err'); return; } const mq = {}; document.querySelectorAll('[data-merchant]').forEach(el => { const v = el.value; if(v !== '' && v !== null && v !== undefined) mq[el.dataset.merchant] = v; }); if(originalDate && originalDate !== date){ delete STATE.pickupCalc.entries[originalDate]; } STATE.pickupCalc.entries[date] = { price, liters, mq }; saveState(); refresh(); closeModal(); renderPage(); toast('Saved', 'ok'); }
 function deletePickupEntry(date){ if(!canDo('delete_pickup_entry')){ denyPerm(); return; } const e = fcEntry(date); if(!e) return; const liters = parseFloat(e.liters) || 0; const price = parseFloat(e.price) || 0; const cost = liters * price; confirmSmartDelete({ title: 'Delete Pickup Entry', subject: fmtDate(date) + ' · ' + liters.toFixed(2) + ' L @ PKR ' + price.toFixed(2) + '/L', message: 'This action cannot be undone.', impacts: [{ type:'danger', text:'Fuel cost of <b>' + fmt(cost) + '</b> will be removed from shipment calculations.' }], confirmLabel: 'Yes, Delete', onConfirm: () => { delete STATE.pickupCalc.entries[date]; saveState(); refresh(); renderPage(); toast('Pickup entry deleted', 'ok'); } }); }
 
+// ===== FIX 12,13,14: Adjusted filter logic, dropdown option, payment calc card =====
 function renderShipments(){
   if(!canDo('view_shipments')) return cardLocked('All Shipments');
   const canViewCosts = canDo('view_shipments_costs'); const canViewProfit = canDo('view_shipments_profit'); const canViewCod = canDo('view_shipments_cod'); const canViewTax = canDo('view_shipments_tax'); const canSearch = canDo('view_shipments_search'); const canPaginate = canDo('view_shipments_pagination'); const canEdit = canDo('edit_shipment'); const canDelete = canDo('delete_shipment'); const canAdd = canDo('add_shipment');
@@ -1287,7 +1295,7 @@ function renderShipments(){
   if(FILTER_RIDER) list = list.filter(s => s.riderId === FILTER_RIDER);
   if(FILTER_PAYMENT) list = list.filter(s => s.settlementStatus === FILTER_PAYMENT);
   if(FILTER_FULFILL) list = list.filter(s => s.fulfillmentType === FILTER_FULFILL);
-  if(FILTER_SHIPX_PAID){ if(FILTER_SHIPX_PAID === 'paid') list = list.filter(s => getShipmentPaymentStatus(s).isPaid); if(FILTER_SHIPX_PAID === 'unpaid') list = list.filter(s => !getShipmentPaymentStatus(s).isPaid); }
+  if(FILTER_SHIPX_PAID){ if(FILTER_SHIPX_PAID === 'paid') list = list.filter(s => getShipmentPaymentStatus(s).isPaid); else if(FILTER_SHIPX_PAID === 'unpaid') list = list.filter(s => getShipmentPaymentStatus(s).isUnpaid); else if(FILTER_SHIPX_PAID === 'adjusted') list = list.filter(s => getShipmentPaymentStatus(s).isAdjusted); }
   list = list.slice().sort((a,b) => { const da = String(a.bookingDate || ''); const db = String(b.bookingDate || ''); if(da !== db) return db.localeCompare(da); return 0; });
   const total = list.length;
   const activeFilterCount = [FILTER_STATUS,FILTER_RIDER,FILTER_PAYMENT,FILTER_FULFILL,FILTER_SHIPX_PAID].filter(Boolean).length;
@@ -1310,9 +1318,9 @@ function renderShipments(){
   const riderOpts = STATE.riders.map(r=>`<option value="${r.id}" ${FILTER_RIDER===r.id?'selected':''}>${esc(r.name)}</option>`).join('');
   const payOpts = ['Pending','Paid','N/A'].map(v=>`<option value="${v}" ${FILTER_PAYMENT===v?'selected':''}>${v}</option>`).join('');
   const fOpts = [['OWN','Own Rider'],['THIRD_PARTY','Partner']].map(([v,l])=>`<option value="${v}" ${FILTER_FULFILL===v?'selected':''}>${l}</option>`).join('');
-  const paidSplitOpts = [['paid','ShipX Paid to Merchant'],['unpaid','Unpaid by ShipX']].map(([v,l])=>`<option value="${v}" ${FILTER_SHIPX_PAID===v?'selected':''}>${l}</option>`).join('');
+  const paidSplitOpts = [['paid','ShipX Paid to Merchant'],['unpaid','Unpaid by ShipX'],['adjusted','Adjusted (RTO)']].map(([v,l])=>`<option value="${v}" ${FILTER_SHIPX_PAID===v?'selected':''}>${l}</option>`).join('');
   const filterUI = `${filterSelect('f-status','All Statuses',FILTER_STATUS,statusOpts,'setFilterStatus')}${filterSelect('f-rider','All Riders',FILTER_RIDER,riderOpts,'setFilterRider')}${filterSelect('f-pay','All Payments',FILTER_PAYMENT,payOpts,'setFilterPayment')}${filterSelect('f-fulfill','All Delivery',FILTER_FULFILL,fOpts,'setFilterFulfill')}${filterSelect('f-shipx-paid','Merchant Payment Status',FILTER_SHIPX_PAID,paidSplitOpts,'setFilterShipxPaid')}${activeFilterCount ? `<button class="btn ghost sm" onclick="clearShipFilters()" title="Clear filters">${svgIcon('x',13)}Clear (${activeFilterCount})</button>` : ''}`;
-  const paymentCalcCard = FILTER_SHIPX_PAID ? (() => { const s = getShipmentsPaymentSummary(list); return `<div class="hero-modern"><div class="hero-modern-strip"></div><div class="hero-modern-body"><div class="hero-modern-head"><div style="display:flex;align-items:center;gap:14px"><div class="hero-modern-icon">${svgIcon('money', 24)}</div><div><div class="hero-modern-title">Payment Calculation — ${FILTER_SHIPX_PAID === 'paid' ? 'ShipX Paid' : 'Unpaid by ShipX'}</div><div class="hero-modern-sub">Filtered by: ${FILTER_SHIPX_PAID === 'paid' ? 'Shipments marked as paid' : 'Shipments still owed'}</div></div></div></div><div class="hero-modern-stats"><div class="hero-modern-stat"><div class="hero-modern-stat-label">${svgIcon('receipt', 12)} Total Net Payable</div><div class="hero-modern-stat-value">${fmt(s.totalExpected)}</div></div><div class="hero-modern-stat" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);border-color:#BBF7D0"><div class="hero-modern-stat-label" style="color:#15803D">${svgIcon('checkCircle', 12)} Already Paid</div><div class="hero-modern-stat-value" style="color:#15803D">${fmt(s.alreadyPaid)}</div></div><div class="hero-modern-stat" style="background:${s.stillUnpaid > 0 ? 'linear-gradient(135deg,#FEF2F2,#FEE2E2)' : 'linear-gradient(135deg,#F0FDF4,#DCFCE7)'};border-color:${s.stillUnpaid > 0 ? '#FCA5A5' : '#BBF7D0'}"><div class="hero-modern-stat-label" style="color:${s.stillUnpaid > 0 ? 'var(--neg)' : 'var(--pos)'}">${svgIcon(s.stillUnpaid > 0 ? 'alert' : 'check', 12)} Still To Pay</div><div class="hero-modern-stat-value" style="color:${s.stillUnpaid > 0 ? 'var(--neg)' : 'var(--pos)'}">${fmt(s.stillUnpaid)}</div></div><div class="hero-modern-stat"><div class="hero-modern-stat-label">${svgIcon('target', 12)} Progress</div><div class="hero-modern-stat-value">${s.totalExpected > 0 ? ((s.alreadyPaid / s.totalExpected) * 100).toFixed(1) : '0.0'}<small>%</small></div></div></div></div></div>`; })() : '';
+  const paymentCalcCard = FILTER_SHIPX_PAID ? (() => { const s = getShipmentsPaymentSummary(list); return `<div class="hero-modern"><div class="hero-modern-strip"></div><div class="hero-modern-body"><div class="hero-modern-head"><div style="display:flex;align-items:center;gap:14px"><div class="hero-modern-icon">${svgIcon('money', 24)}</div><div><div class="hero-modern-title">Payment Calculation — ${FILTER_SHIPX_PAID === 'paid' ? 'ShipX Paid' : (FILTER_SHIPX_PAID === 'unpaid' ? 'Unpaid by ShipX' : 'Adjusted (RTO)')}</div><div class="hero-modern-sub">Filtered by: ${FILTER_SHIPX_PAID === 'paid' ? 'Shipments marked as paid' : (FILTER_SHIPX_PAID === 'unpaid' ? 'Shipments still owed' : 'Returned parcels — charges already deducted')}</div></div></div></div><div class="hero-modern-stats"><div class="hero-modern-stat"><div class="hero-modern-stat-label">${svgIcon('receipt', 12)} Total Net Payable</div><div class="hero-modern-stat-value">${fmt(s.totalExpected)}</div></div><div class="hero-modern-stat" style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);border-color:#BBF7D0"><div class="hero-modern-stat-label" style="color:#15803D">${svgIcon('checkCircle', 12)} Already Paid</div><div class="hero-modern-stat-value" style="color:#15803D">${fmt(s.alreadyPaid)}</div></div><div class="hero-modern-stat" style="background:${s.stillUnpaid > 0 ? 'linear-gradient(135deg,#FEF2F2,#FEE2E2)' : 'linear-gradient(135deg,#F0FDF4,#DCFCE7)'};border-color:${s.stillUnpaid > 0 ? '#FCA5A5' : '#BBF7D0'}"><div class="hero-modern-stat-label" style="color:${s.stillUnpaid > 0 ? 'var(--neg)' : 'var(--pos)'}">${svgIcon(s.stillUnpaid > 0 ? 'alert' : 'check', 12)} Still To Pay</div><div class="hero-modern-stat-value" style="color:${s.stillUnpaid > 0 ? 'var(--neg)' : 'var(--pos)'}">${fmt(s.stillUnpaid)}</div></div><div class="hero-modern-stat"><div class="hero-modern-stat-label">${svgIcon('target', 12)} Progress</div><div class="hero-modern-stat-value">${s.totalExpected > 0 ? ((s.alreadyPaid / s.totalExpected) * 100).toFixed(1) : '0.0'}<small>%</small></div></div></div></div></div>`; })() : '';
   return `${renderDateBar()}${paymentCalcCard}<div class="kpi-grid">${kpi('Total Shipments', num(t.count), '', '', 'package')}${kpi('COD', num(t.codService), '', 'lime', 'money')}${kpi('Replacement', num(t.replacementService), '', 'gold', 'swap')}${kpi('Delivered', num(t.delivered), '', 'lime', 'truck')}${kpi('Returns', num(t.rto), '', 'red', 'returnIcon')}${kpi('Paid', num(t.paid), '', 'teal', 'checkCircle')}${kpi('Unpaid', num(t.unpaid), '', 'gold', 'info')}${canViewCosts ? kpi('Gross Profit', fmt(t.contribution), pct(t.margin)+' margin', t.contribution>0?'pos':'neg', 'money') : kpiLocked('Gross Profit')}</div><div class="card"><div class="toolbar no-print">${searchBox}${filterUI}${pageSelect}${canDo('export_shipments_csv') ? `<button class="btn ghost" onclick="exportShipmentsCSV()">${svgIcon('download', 14)}Export</button>` : ''}${canAdd ? `<button class="btn lime" onclick="openShipmentForm()">${svgIcon('plus', 14)}Add Shipment</button>` : ''}</div><div class="tbl-wrap scroll-y"><table class="ship-tbl"><thead><tr><th class="col-check"><input type="checkbox" onchange="toggleSelectAll(this.checked)"></th><th class="col-date">Date</th><th class="col-id">Shipment</th><th class="col-ref">Ref ID</th><th class="col-consignee">Consignee</th><th class="col-merchant">Merchant</th><th class="col-origin">Origin</th><th class="col-dest">Dest</th><th class="col-wt">Wt</th><th class="col-service">Service</th>${canViewCod?'<th class="col-cod">COD</th>':''}${canViewTax?'<th class="col-codtax">4% COD</th>':''}<th class="col-rev">Revenue</th>${canViewCosts?'<th class="col-fuel">Fuel</th><th class="col-pickup">Rider Pickup</th><th class="col-delivery">Rider Delivery</th><th class="col-partner">Partner</th><th class="col-ownrider">Own Rider</th><th class="col-other">Other</th><th class="col-total">Total Cost</th>':''}${canViewProfit?'<th class="col-earn">Profit</th>':''}<th class="col-status">Status</th><th class="col-paid">Payment</th><th class="col-shipx-paid" title="ShipX Paid to Merchant">ShipX Paid?</th><th class="col-act no-print">Actions</th></tr></thead><tbody>${tbodyHtml}</tbody></table></div>${canPaginate && totalPages > 1 ? `<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:16px"><button class="btn ghost sm" onclick="goPage(${CURRENT_PAGE_NUM-1})" ${CURRENT_PAGE_NUM===1?'disabled':''}>Prev</button><span class="small">Page ${CURRENT_PAGE_NUM} of ${totalPages} (${total} records)</span><button class="btn ghost sm" onclick="goPage(${CURRENT_PAGE_NUM+1})" ${CURRENT_PAGE_NUM===totalPages?'disabled':''}>Next</button></div>` : ''}</div>`;
 }
 function onSearch(v){ SEARCH_QUERY = v; CURRENT_PAGE_NUM = 1; renderPage(); }
@@ -1410,7 +1418,6 @@ function renderOwnVsThird(){
   return `${renderDateBar()}<div class="section-head"><h3>${svgIcon('swap', 20)}Own vs Partner</h3></div>${winnerBanner}<div class="row2" style="margin-bottom:20px">${heroCard('Own Rider', own, ownPerParcel, 'user', 'linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%)', winner === 'own', num(own.count) + ' shipments')}${heroCard('Third-Party Partner', tp, tpPerParcel, 'truck', 'linear-gradient(135deg,#D68910 0%,#B45309 100%)', winner === 'third', num(tp.count) + ' shipments')}</div><div class="row2">${splitCard}${comparisonCard}</div>`;
 }
 
-/* ===== MODERN TAX SUMMARY ===== */
 function renderTaxSummary(){
   if(!canDo('view_tax')) return cardLocked('Tax Summary');
   const canSeeGst = canDo('view_tax_gst');
@@ -1438,7 +1445,6 @@ function renderTaxSummary(){
   });
   const monthList = Object.keys(buckets).sort().reverse();
   const maxTaxByMonth = Math.max(...monthList.map(m => buckets[m].gst + buckets[m].codSelf + buckets[m].codPartner), 1);
-
   const heroSection = `
     <div class="card" style="padding:0;overflow:hidden;margin-bottom:20px;box-shadow:0 12px 32px rgba(31,42,55,.1)">
       <div style="background:linear-gradient(135deg,var(--slate) 0%,var(--slate-3) 60%,var(--teal-dark) 100%);padding:32px 36px;color:#fff;position:relative;overflow:hidden">
@@ -1466,7 +1472,6 @@ function renderTaxSummary(){
         </div>
       </div>
     </div>`;
-
   const splitCards = `<div class="row2" style="margin-bottom:20px">
     <div class="tax-split-card">
       <div class="ts-header green">
@@ -1492,7 +1497,6 @@ function renderTaxSummary(){
       <div class="ts-note">Partner deducts this from COD before remitting to merchant. SHIPX doesn't pay this directly.</div>
     </div>
   </div>`;
-
   const monthlyCard = canSeeMonthly ? `
     <div class="card" style="padding:22px 24px">
       <div class="card-title" style="margin-bottom:18px">
@@ -1539,7 +1543,6 @@ function renderTaxSummary(){
         </table>
       </div>`}
     </div>` : '';
-
   return `${renderDateBar()}${heroSection}${splitCards}${monthlyCard}`;
 }
 function exportTaxCSV(){ if(!canDo('view_tax')){ denyPerm(); return; } const buckets = {}; ENGINE.computed.forEach(s => { if(!s.bookingDate) return; const m = s.bookingDate.slice(0,7); if(!buckets[m]) buckets[m] = { count:0, revenue:0, gst:0, codSelf:0, codPartner:0 }; buckets[m].count++; buckets[m].revenue += s.shippingRevenue || 0; buckets[m].gst += s.gstPayable || 0; buckets[m].codSelf += s.codRetained || 0; buckets[m].codPartner += s.codPassThrough || 0; }); const months = Object.keys(buckets).sort(); if(!months.length){ toast('No data to export','err'); return; } const headers = ['Month','Shipments','Revenue (excl. GST)','GST (SHIPX Pays)','COD WHT (SHIPX Pays)','COD WHT (Partner Pays on Behalf)']; const rows = months.map(m => [m, buckets[m].count, buckets[m].revenue.toFixed(2), buckets[m].gst.toFixed(2), buckets[m].codSelf.toFixed(2), buckets[m].codPartner.toFixed(2)]); const total = ['TOTAL', months.reduce((a,m)=>a+buckets[m].count,0), months.reduce((a,m)=>a+buckets[m].revenue,0).toFixed(2), months.reduce((a,m)=>a+buckets[m].gst,0).toFixed(2), months.reduce((a,m)=>a+buckets[m].codSelf,0).toFixed(2), months.reduce((a,m)=>a+buckets[m].codPartner,0).toFixed(2)]; rows.push(total); downloadCSV(headers, rows, 'shipx-tax-filing-' + todayStr()); logAudit('tax_export', 'Exported tax filing CSV'); toast('Tax filing CSV downloaded', 'ok'); }
@@ -1552,10 +1555,11 @@ function renderSettlements(){
   return `${renderDateBar()}<div class="section-head"><h3>${svgIcon('receipt', 20)}Pay Merchants</h3></div>${renderMerchantPaymentHero()}${batches.length === 0 ? '<div class="card"><div class="info-note warn">No merchant payments yet. Add delivered shipments first.</div></div>' : cardsHtml}`;
 }
 
+// ===== FIX 16: Bank Match Math.abs removed =====
 function renderBank(){
   if(!canDo('view_bank')) return cardLocked('Bank Match');
   const canSeeExpected = canDo('view_bank_expected'); const canSeeReceived = canDo('view_bank_received'); const canRecord = canDo('record_bank_payment');
-  const rows = STATE.merchants.map(m => { const list = ENGINE.computed.filter(s => s.merchantId === m.id && (s.status === 'Delivered' || s.status === 'RTO')); if(!list.length) return null; const expected = list.reduce((a,b) => a + Math.abs(b.netSettlement || 0), 0); const payments = (STATE.bankPayments || []).filter(p => p.merchantId === m.id); const actual = payments.reduce((a,b) => a + (b.amount || 0), 0); const diff = actual - expected; return { m, expected, actual, diff, payments, list }; }).filter(Boolean);
+  const rows = STATE.merchants.map(m => { const list = ENGINE.computed.filter(s => s.merchantId === m.id && (s.status === 'Delivered' || s.status === 'RTO')); if(!list.length) return null; const rawNet = list.reduce((a,b) => a + (b.netSettlement || 0), 0); const expected = Math.max(0, rawNet); const payments = (STATE.bankPayments || []).filter(p => p.merchantId === m.id); const actual = payments.reduce((a,b) => a + (b.amount || 0), 0); const diff = actual - expected; return { m, expected, actual, diff, payments, list }; }).filter(Boolean);
   const totalExpected = rows.reduce((a,b) => a + b.expected, 0); const totalActual = rows.reduce((a,b) => a + b.actual, 0); const totalDiff = totalActual - totalExpected;
   const fullyMatched = rows.filter(r => Math.abs(r.diff) < 1).length; const underpaid = rows.filter(r => r.diff < -1).length; const overpaid = rows.filter(r => r.diff > 1).length;
   return `${renderDateBar()}<div class="section-head"><h3>${svgIcon('bank', 20)}Bank Match</h3></div><div class="card" style="background:linear-gradient(135deg,#EFF6FF 0%,#DBEAFE 100%);border:2px solid #93C5FD;margin-bottom:20px"><div class="card-title" style="color:#1D4ED8"><div class="title-left">${svgIcon('info', 18)}How Bank Match Works</div></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px"><div style="background:#fff;border-radius:12px;padding:16px 18px;border-left:4px solid var(--teal)"><div style="font-size:10.5px;font-weight:800;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px">1. Expected</div><div style="font-size:13px;color:#334155;line-height:1.5">Amount <b>ShipX owes</b> merchant from all delivered shipments. Calculated automatically from COD and fees.</div></div><div style="background:#fff;border-radius:12px;padding:16px 18px;border-left:4px solid var(--pos)"><div style="font-size:10.5px;font-weight:800;color:var(--pos);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px">2. Received</div><div style="font-size:13px;color:#334155;line-height:1.5">Amount <b>ShipX has actually paid</b> merchant (recorded here or auto from shipments marked as "Paid").</div></div><div style="background:#fff;border-radius:12px;padding:16px 18px;border-left:4px solid var(--gold)"><div style="font-size:10.5px;font-weight:800;color:#B45309;text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px">3. Difference</div><div style="font-size:13px;color:#334155;line-height:1.5">Gap between what was expected vs paid. <b style="color:var(--pos)">+ = overpaid</b> · <b style="color:var(--neg)">− = still owed</b> · <b style="color:var(--teal-dark)">0 = matched ✓</b></div></div></div></div><div class="kpi-grid">${canSeeExpected ? kpi('Total Expected', fmt(totalExpected), 'ShipX owes merchants', 'teal', 'wallet') : kpiLocked('Total Expected')}${canSeeReceived ? kpi('Total Received', fmt(totalActual), 'Already paid', 'lime', 'checkCircle') : kpiLocked('Total Received')}${canSeeExpected && canSeeReceived ? kpi('Difference', fmt(totalDiff), totalDiff >= 0 ? 'Overpaid' : 'Still owed', totalDiff >= 0 ? 'pos' : 'neg', 'swap') : kpiLocked('Difference')}${kpi('Fully Matched', fullyMatched + ' / ' + rows.length, underpaid + ' underpaid · ' + overpaid + ' overpaid', 'teal', 'target')}</div><div class="card"><div class="card-title"><div class="title-left">${svgIcon('bank', 18)}Merchant-wise Reconciliation</div></div>${rows.length === 0 ? '<div class="info-note warn">No merchant data yet.</div>' : `<div style="display:flex;flex-direction:column;gap:12px">${rows.map(r => { const isMatched = Math.abs(r.diff) < 1; const isOver = r.diff > 1; const isUnder = r.diff < -1; const statusLabel = isMatched ? 'Matched ✓' : (isOver ? 'Overpaid' : 'Still Owed'); const statusBg = isMatched ? '#DCFCE7' : (isOver ? '#DBEAFE' : '#FEE2E2'); const statusColor = isMatched ? '#15803D' : (isOver ? '#1D4ED8' : '#B91C1C'); const borderColor = isMatched ? 'var(--pos)' : (isOver ? 'var(--blue)' : 'var(--neg)'); const progress = r.expected > 0 ? Math.min(100, (r.actual/r.expected)*100) : 100; const actBtn = canRecord ? `<button class="btn lime sm" onclick="openBankPaymentForm('${r.m.id}')">${svgIcon('plus', 13)}Record Payment</button>` : ''; return `<div style="background:#F8FAFC;border-radius:14px;padding:18px 20px;border-left:4px solid ${borderColor}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:10px"><div style="display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--teal);border:1.5px solid var(--border)">${svgIcon('store', 18)}</div><div><div style="font-size:14.5px;font-weight:800;color:var(--slate)">${esc(r.m.name)}</div><div style="font-size:11.5px;color:var(--muted);margin-top:2px">${r.list.length} delivered shipment${r.list.length>1?'s':''} · ${r.payments.length} payment${r.payments.length!==1?'s':''} recorded</div></div></div><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span style="background:${statusBg};color:${statusColor};border:1.5px solid ${statusColor}40;padding:5px 12px;border-radius:20px;font-size:11.5px;font-weight:800">${statusLabel}</span>${actBtn}</div></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px"><div style="background:#fff;border-radius:10px;padding:12px 14px;border:1px solid var(--border)"><div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Expected</div><div style="font-size:18px;font-weight:800;color:var(--teal-dark);font-variant-numeric:tabular-nums;margin-top:3px">${fmt(r.expected)}</div></div><div style="background:#fff;border-radius:10px;padding:12px 14px;border:1px solid var(--border)"><div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Received</div><div style="font-size:18px;font-weight:800;color:var(--pos);font-variant-numeric:tabular-nums;margin-top:3px">${fmt(r.actual)}</div></div><div style="background:#fff;border-radius:10px;padding:12px 14px;border:1px solid var(--border)"><div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Difference</div><div style="font-size:18px;font-weight:800;color:${r.diff >= 0 ? 'var(--pos)' : 'var(--neg)'};font-variant-numeric:tabular-nums;margin-top:3px">${r.diff >= 0 ? '+' : ''}${fmt(r.diff)}</div></div></div><div style="height:8px;background:#E5E9F0;border-radius:5px;overflow:hidden"><div style="height:100%;width:${progress}%;background:${borderColor};border-radius:5px;transition:width .8s var(--ease)"></div></div><div style="font-size:11px;color:var(--muted);font-weight:600;margin-top:6px">${progress.toFixed(1)}% matched${isMatched ? ' — Perfect ✓' : (isOver ? ' — Overpaid by ' + fmt(r.diff) : ' — Still owes ' + fmt(Math.abs(r.diff)))}</div></div>`; }).join('')}</div>`}</div>`;
@@ -1575,7 +1579,6 @@ function loadScenarioFromCurrent(){ if(!canDo('edit_scenarios')){ denyPerm(); re
 
 function renderCostMaster(){ if(!canDo('view_costmaster')) return cardLocked('Cost Categories'); const canAdd = canDo('add_cost_category'); const canEdit = canDo('edit_cost_category'); const canDelete = canDo('delete_cost_category'); return `<div class="section-head"><h3>${svgIcon('layers', 20)}Cost Categories</h3>${canAdd ? `<button class="btn lime" onclick="openCostCatForm()">${svgIcon('plus', 15)}Add Category</button>` : ''}</div><div class="card"><div class="tbl-wrap"><table><thead><tr><th>ID</th><th>Category</th><th>Type</th><th>Basis</th><th style="width:120px">Actions</th></tr></thead><tbody>${STATE.costMaster.map(c=>{ const eBtn = canEdit?`<button class="btn-icon" onclick="openCostCatForm('${c.id}')" title="Edit">${svgIcon('edit', 15)}</button>`:''; const dBtn = canDelete?`<button class="btn-icon danger" onclick="deleteCostCat('${c.id}')" title="Delete">${svgIcon('x', 15)}</button>`:''; return `<tr><td class="mono">${esc(c.id)}</td><td><b>${esc(c.category)}</b></td><td>${esc(c.type)}</td><td>${esc(c.basis)}</td><td><div class="actions-cell">${eBtn}${dBtn}</div></td></tr>`; }).join('')}</tbody></table></div></div>`; }
 
-/* ===== MODERN MY RATES ===== */
 function renderPricing(){
   if(!canDo('view_pricing')) return cardLocked('My Rates');
   const canEditCharges = canDo('edit_charges_config') || canDo('change_settings');
@@ -1584,7 +1587,6 @@ function renderPricing(){
   const ro = canEditCharges ? '' : 'readonly';
   const canEditMerchRates = canDo('edit_merchant_rates');
   const canEditPartnerRates = canDo('edit_partner_rates');
-
   const chargeCard = (title, subtitle, iconName, gradient, gstId, fuelId, gstVal, fuelVal, saveFn, btnGrad) => `
     <div style="border-radius:18px;overflow:hidden;box-shadow:0 4px 20px rgba(31,42,55,.08);margin-bottom:18px">
       <div style="background:${gradient};padding:18px 22px;display:flex;align-items:center;gap:12px;color:#fff">
@@ -1611,7 +1613,6 @@ function renderPricing(){
         ${canEditCharges ? `<div style="display:flex;justify-content:flex-end;margin-top:16px"><button class="btn" onclick="${saveFn}()" style="padding:10px 18px;background:${btnGrad}">${svgIcon('check', 14)}Save Changes</button></div>` : ''}
       </div>
     </div>`;
-
   const rateTable = (items, isMerchant, canEdit) => {
     if(!items.length) return `<div class="info-note warn">No ${isMerchant ? 'merchants' : 'partners'} yet.</div>`;
     return `
@@ -1648,7 +1649,6 @@ function renderPricing(){
         </table>
       </div>`;
   };
-
   return `
     <div class="section-head">
       <h3>${svgIcon('tag', 20)}My Rates</h3>
@@ -1677,7 +1677,6 @@ function saveMerchantPricing(id){ if(!canDo('edit_merchant_rates') && !canDo('ed
 function openVendorPricingForm(id){ if(!canDo('edit_partner_rates') && !canDo('change_settings')){ denyPerm(); return; } const v = STATE.vendors.find(x=>x.id===id); if(!v) return; if(!v.pricing) v.pricing = defaultVendorPricing(); const c = v.pricing.citySlabs || []; const n = v.pricing.nationwideSlabs || []; const input = (prefix, idx, slab) => { if(!slab) slab = { rate: 0 }; const isLast = idx === 2; return `<tr><td><span class="slab-badge">${idx===0?'0.5 – 1 kg':(idx===1?'1.01 – 2 kg':'2.01 – 10 kg')}</span></td><td>${isLast ? `<input type="number" id="${prefix}_extra_${idx}" value="${slab.perExtraKg || 0}">` : `<input type="number" id="${prefix}_rate_${idx}" value="${slab.rate || 0}">`}</td></tr>`; }; openModal('Partner Rates — ' + v.name, `<div class="row2"><div><div class="card-title">City</div><table class="slab-tbl"><tbody>${input('vcity', 0, c[0])}${input('vcity', 1, c[1])}${input('vcity', 2, c[2])}</tbody></table></div><div><div class="card-title">Nationwide</div><table class="slab-tbl"><tbody>${input('vnation', 0, n[0])}${input('vnation', 1, n[1])}${input('vnation', 2, n[2])}</tbody></table></div></div><div style="display:flex;gap:12px;justify-content:flex-end;margin-top:24px"><button class="btn ghost" onclick="closeModal()">Cancel</button><button class="btn lime" onclick="saveVendorPricing('${v.id}')">Save</button></div>`, 'wide'); }
 function saveVendorPricing(id){ if(!canDo('edit_partner_rates') && !canDo('change_settings')){ denyPerm(); return; } const v = STATE.vendors.find(x=>x.id===id); if(!v) return; const ns = [readSlabInputs('vcity'), readSlabInputs('vnation')]; const er = validateSlabs(ns); if(er){ toast(er, 'err'); return; } v.pricing = { v:3, citySlabs: ns[0], nationwideSlabs: ns[1] }; saveState(); refresh(); closeModal(); renderPage(); toast('Updated', 'ok'); }
 
-/* ===== MODERN SETTINGS ===== */
 function renderSettings(){
   if(!canDo('view_settings')) return cardLocked('Settings');
   const alloc = STATE.riderAllocation || { pickup: 40, delivery: 50, reattempt: 10 };
@@ -1693,9 +1692,7 @@ function renderSettings(){
   const roAlloc = canAlloc ? '' : 'readonly';
   const cloudBadge = CLOUD_READY ? `<span class="conn-badge conn-ok">${svgIcon('check', 12)}Connected</span>` : `<span class="conn-badge conn-err">${svgIcon('alert', 12)}Not Connected</span>`;
   const nextSyncIn = (() => { const last = getLastAutoSync(); if(!last) return 'On next page load'; const next = last + AUTO_SYNC_INTERVAL_MS; const rem = next - Date.now(); if(rem <= 0) return 'Due now'; const h = Math.floor(rem / (1000*60*60)); const m = Math.floor((rem % (1000*60*60)) / (1000*60)); return h + 'h ' + m + 'm'; })();
-
   const sectionHeader = (icon, title, subtitle) => `<div style="display:flex;align-items:center;gap:12px;margin-bottom:18px"><div style="width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--teal-light),#CCFBF1);color:var(--teal-dark);display:flex;align-items:center;justify-content:center;flex-shrink:0">${svgIcon(icon, 20)}</div><div><div style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:var(--slate)">${title}</div>${subtitle ? `<div style="font-size:11.5px;color:var(--muted);margin-top:2px;font-weight:500">${subtitle}</div>` : ''}</div></div>`;
-
   const inputField = (label, value, ro, suffix, onchange) => {
     const suffixHtml = suffix ? `<span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:800;color:var(--muted);pointer-events:none">${suffix}</span>` : '';
     const paddingRight = suffix ? '42px' : '16px';
@@ -1708,17 +1705,13 @@ function renderSettings(){
       </div>
     </div>`;
   };
-
   const taxTotalPct = (parseFloat(STATE.taxSettings.incomeWHT || 0) + parseFloat(STATE.taxSettings.salesWHT || 0)).toFixed(1);
   const allocTotalPct = (parseFloat(alloc.pickup || 0) + parseFloat(alloc.delivery || 0) + parseFloat(alloc.reattempt || 0)).toFixed(0);
-
   return `
     <div class="section-head">
       <h3>${svgIcon('settings', 20)}Settings</h3>
       <span class="small" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#F1F5F9;color:#475569;border-radius:20px;font-weight:600;border:1px solid #E2E8F0">${svgIcon('lock', 13)}Role-gated</span>
     </div>
-
-    <!-- FUEL PRICE HERO -->
     <div class="card" style="background:linear-gradient(135deg,#FFFBEB 0%,#FEF3C7 100%);border:2px solid #FDE68A;padding:0;overflow:hidden;margin-bottom:18px;position:relative">
       <div style="position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(214,137,16,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none"></div>
       <div style="padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;position:relative">
@@ -1738,8 +1731,6 @@ function renderSettings(){
         </div>
       </div>
     </div>
-
-    <!-- TAX + RIDER SPLIT -->
     <div class="row2" style="margin-bottom:18px">
       <div class="card" style="padding:22px 24px;margin-bottom:0">
         ${sectionHeader('receipt', 'Tax Deductions', 'Applied to income and sales calculations')}
@@ -1759,8 +1750,6 @@ function renderSettings(){
         <div style="margin-top:14px;padding:10px 14px;background:var(--teal-light);border-radius:8px;border-left:3px solid var(--teal);font-size:12px;color:var(--teal-dark);font-weight:600">Sum: <b>${allocTotalPct}%</b> of commission pool</div>
       </div>
     </div>
-
-    <!-- CLOUD SYNC -->
     <div class="card" style="background:linear-gradient(135deg,#EFF6FF 0%,#DBEAFE 100%);border:2px solid #93C5FD;padding:22px 24px;margin-bottom:18px">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px">
         <div style="display:flex;align-items:center;gap:12px">
@@ -1794,8 +1783,6 @@ function renderSettings(){
         <button class="btn" onclick="testFirebaseConnection()" style="background:var(--blue);padding:10px 16px">${svgIcon('checkCircle', 14)}Test Connection</button>
       </div>
     </div>
-
-    <!-- BACKUP -->
     <div class="card" style="padding:22px 24px">
       ${sectionHeader('database', 'Backup & Data', 'Export, restore, or reset your data')}
       <div style="display:flex;gap:10px;flex-wrap:wrap">
@@ -1852,9 +1839,9 @@ function toggleUserActive(id){ if(!canDo('toggle_user_active') && !canManageUser
 function renderValidation(){
   if(!canDo('view_validation')) return cardLocked('Verify Numbers');
   const rows = [
-    ['FBR-compliant GST', 'pos'],['All-inclusive rates', 'pos'],['Total ' + ALL_PERMISSION_COUNT + ' permissions', 'pos'],['canDo() central checker', 'pos'],['Delete confirmation popup (Yes/No)', 'pos'],['Staff allowances + salary tracking', 'pos'],['COD collection & submission tracking', 'pos'],['COD KPI label "COD Payable By Own Rider"', 'pos'],['Expense quantity + date + unit price', 'pos'],['"Today" quick button on all date fields', 'pos'],['System date badge in header', 'pos'],['Auto-sync every 24 hours + on save + on tab close', 'pos'],['Firebase cloud sync (fully functional)', CLOUD_READY ? 'pos' : 'neg'],['Shipment filters (status / rider / payment / delivery)', 'pos'],['Merchant Payment Status filter (ShipX Paid / Unpaid)', 'pos'],['Per-shipment "ShipX Paid?" column', 'pos'],['Edit Shipment — SHIPX Payment radio cards (modern)', 'pos'],['Auto bank payment when marking shipment as paid', 'pos'],['All Shipments — Merchant Payments Overview removed', 'pos'],['My Merchants — infographic layout', 'pos'],['Merchant detail modal opens from infographic', 'pos'],['Bank payments auto-update merchant status', 'pos'],['Money Flow — premium layout', 'pos'],['Tax split — modern premium header cards', 'pos'],['Tax Summary — hero with total tax + split cards', 'pos'],['Tax filing: SHIPX vs Partner split', 'pos'],['Profit & Loss — single Add Expense action bar', 'pos'],['Pay Merchants — aggregate hero + per-merchant cards', 'pos'],['Day-to-day expense with quantity', 'pos'],['RTO page totals row', 'pos'],['Shipments in separate Firestore collection', 'pos'],['SHIPX branding — premium WOW design with motion', 'pos'],['Data persistence (no vanish on refresh)', 'pos'],['Bank Match — info guide + reconciliation layout', 'pos'],['Own vs Partner — winner banner + hero cards', 'pos'],['Settings — modern sectioned layout', 'pos'],['My Rates — modern charge cards + rate tables', 'pos'],['No duplicate sections across dashboard', 'pos'],['Full dashboard — 100% functional', 'pos']
+    ['FBR-compliant GST', 'pos'],['All-inclusive rates', 'pos'],['Total ' + ALL_PERMISSION_COUNT + ' permissions', 'pos'],['canDo() central checker', 'pos'],['Delete confirmation popup (Yes/No)', 'pos'],['Staff allowances + salary tracking', 'pos'],['COD collection & submission tracking', 'pos'],['COD KPI label "COD Payable By Own Rider"', 'pos'],['Expense quantity + date + unit price', 'pos'],['"Today" quick button on all date fields', 'pos'],['System date badge in header', 'pos'],['Auto-sync every 24 hours + on save + on tab close', 'pos'],['Firebase cloud sync (fully functional)', CLOUD_READY ? 'pos' : 'neg'],['Shipment filters (status / rider / payment / delivery)', 'pos'],['Merchant Payment Status filter (ShipX Paid / Unpaid / Adjusted)', 'pos'],['Per-shipment "ShipX Paid?" column with Adjusted badge', 'pos'],['Edit Shipment — SHIPX Payment: Paid → Unpaid → Adjust', 'pos'],['Auto-Adjust RTO shipments (no manual step)', 'pos'],['Bank payment only for Delivered + Paid (RTO guard)', 'pos'],['RTO Math.abs bug fixed — due amount correct', 'pos'],['All Shipments — Merchant Payments Overview removed', 'pos'],['My Merchants — infographic layout', 'pos'],['Merchant detail modal opens from infographic', 'pos'],['Bank payments auto-update merchant status', 'pos'],['Money Flow — premium layout', 'pos'],['Tax split — modern premium header cards', 'pos'],['Tax Summary — hero with total tax + split cards', 'pos'],['Tax filing: SHIPX vs Partner split', 'pos'],['Profit & Loss — single Add Expense action bar', 'pos'],['Pay Merchants — aggregate hero + per-merchant cards', 'pos'],['Day-to-day expense with quantity', 'pos'],['RTO page totals row', 'pos'],['Shipments in separate Firestore collection', 'pos'],['SHIPX branding — premium WOW design with motion', 'pos'],['Data persistence (no vanish on refresh)', 'pos'],['Bank Match — info guide + reconciliation layout', 'pos'],['Own vs Partner — winner banner + hero cards', 'pos'],['Settings — modern sectioned layout', 'pos'],['My Rates — modern charge cards + rate tables', 'pos'],['No duplicate sections across dashboard', 'pos'],['Full dashboard — 100% functional', 'pos']
   ];
-  return `<div class="card"><div class="card-title">${svgIcon('checkCircle', 18)}System Verification</div><table><tbody>${rows.map(([label, cls]) => `<tr><td>${esc(label)}</td><td class="num ${cls}">${cls === 'pos' ? 'PASS' : 'LOCAL MODE'}</td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="card"><div class="card-title">${svgIcon('checkCircle', 18)}System Verification — RTO Fix Applied</div><div class="info-note ok">${svgIcon('checkCircle', 18)}<div><b>RTO flow:</b> Shipment RTO mark karo → auto "Adjusted" → merchant total se charges deduct → bank payment nahi banta. Ready.</div></div><table><tbody>${rows.map(([label, cls]) => `<tr><td>${esc(label)}</td><td class="num ${cls}">${cls === 'pos' ? 'PASS' : 'LOCAL MODE'}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
 function openShipmentDetail(id){
@@ -1862,22 +1849,23 @@ function openShipmentDetail(id){
   const canViewCosts = canDo('view_shipments_costs'); const canEdit = canDo('edit_shipment'); const canDelete = canDo('delete_shipment');
   const rider = STATE.riders.find(r => r.id === s.riderId); const riderName = rider ? rider.name : '—';
   const st = getShipmentPaymentStatus(s);
-  const payInfo = `<div class="info-note ${st.isPaid?'ok':'warn'}">${svgIcon(st.isPaid?'checkCircle':'alert', 18)}<div><b>ShipX Payment Status:</b> ${shipxPaidBadgeForShipment(s)} (${st.mode === 'auto' ? 'Auto · from merchant' : (st.mode === 'paid' ? 'Manual: Paid' : 'Manual: Unpaid')})<br>Merchant overall · Due: <b>${fmt(st.expected)}</b> · Paid: <b style="color:var(--pos)">${fmt(st.received)}</b> · Remaining: <b style="color:${st.expected - st.received > 0 ? 'var(--neg)' : 'var(--pos)'}">${fmt(Math.max(0, st.expected - st.received))}</b></div></div>`;
+  const payInfo = `<div class="info-note ${st.isPaid?'ok':(st.isAdjusted?'teal':'warn')}">${svgIcon(st.isPaid?'checkCircle':(st.isAdjusted?'swap':'alert'), 18)}<div><b>ShipX Payment Status:</b> ${shipxPaidBadgeForShipment(s)} (${st.mode === 'paid' ? 'Paid' : (st.mode === 'adjusted' ? 'Adjusted — charges deducted' : 'Unpaid')})<br>Merchant overall · Due: <b>${fmt(st.expected)}</b> · Paid: <b style="color:var(--pos)">${fmt(st.received)}</b> · Remaining: <b style="color:${st.expected - st.received > 0 ? 'var(--neg)' : 'var(--pos)'}">${fmt(Math.max(0, st.expected - st.received))}</b></div></div>`;
   const revCard = canViewCosts ? `<div style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);border:2px solid #86EFAC;border-radius:12px;padding:16px"><div style="font-size:11px;font-weight:700;color:var(--pos);text-transform:uppercase">Revenue</div><div style="font-size:22px;font-weight:800;color:var(--pos)">${fmt(s.totalRevenue)}</div></div><div style="background:linear-gradient(135deg,#FEF2F2,#FEE2E2);border:2px solid #FCA5A5;border-radius:12px;padding:16px"><div style="font-size:11px;font-weight:700;color:var(--neg);text-transform:uppercase">Costs</div><div style="font-size:22px;font-weight:800;color:var(--neg)">${fmt(s.totalDirectCost)}</div></div><div style="background:${s.contribution>=0?'#F0FDF4':'#FEF2F2'};border:2px solid ${s.contribution>=0?'#86EFAC':'#FCA5A5'};border-radius:12px;padding:18px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:11px;font-weight:700;color:${s.contribution>=0?'var(--pos)':'var(--neg)'};text-transform:uppercase">${s.contribution>=0?'Profit':'Loss'}</div><div style="font-size:11px;color:var(--muted)">Margin ${pct(s.contributionMargin)}</div></div><div style="font-size:32px;font-weight:800;color:${s.contribution>=0?'var(--pos)':'var(--neg)'}">${fmt(s.contribution)}</div></div>` : `<div class="info-note">${svgIcon('lock', 18)}Costs hidden.</div>`;
   openModal('Shipment ' + s.id, `${payInfo}<div class="info-note">${svgIcon('info', 18)}<b>${merchantName(s.merchantId)}</b> · ${esc(s.origin)} → ${esc(s.destinationCity)} · ${s.verifiedWeight} kg · ${s.fulfillmentType==='OWN'?'Own: '+esc(riderName):'Partner: '+esc(s.vendor||'')}</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">${revCard}</div><div style="display:flex;gap:12px;justify-content:flex-end;margin-top:24px"><button class="btn ghost" onclick="closeModal()">Close</button>${canDelete?`<button class="btn danger" onclick="closeModal();deleteShipment('${s.id}')">${svgIcon('x', 14)}Delete</button>`:''}${canEdit?`<button class="btn lime" onclick="closeModal();openShipmentForm('${s.id}')">${svgIcon('edit', 14)}Edit</button>`:''}</div>`);
 }
 
+// ===== FIX 7,8,9,10: ShipX Paid UI - Paid/Unpaid/Adjust, no Auto, defaults to unpaid/adjusted =====
 function openShipmentForm(id){
   const isEdit = !!id;
   if(isEdit && !canDo('edit_shipment')){ denyPerm(); return; }
   if(!isEdit && !canDo('add_shipment')){ denyPerm(); return; }
   closeNewMenu();
-  const base = isEdit ? STATE.shipments.find(x=>x.id===id) : { merchantId: STATE.merchants[0]?.id || '', bookingDate: todayStr(), deliveryDate: '', origin: 'Karachi', destinationCity: 'Karachi', codAmount: 0, referenceId: '', consigneeName: '', declaredWeight: 1, verifiedWeight: 1, shippingRevenue: 0, otherRevenue: 0, fulfillmentType: 'OWN', vendor: STATE.vendors[0]?.name || '', thirdPartyCost: 0, routeId: '', riderId: STATE.riders[0]?.id || '', reattempts: 0, rto: false, rtoCost: 0, otherDirectCost: 0, otherDeductions: 0, status: 'Pending', paymentMethod: '', settlementStatus: 'Pending', serviceType: 'COD', shipxPaymentStatus: 'auto' };
+  const base = isEdit ? STATE.shipments.find(x=>x.id===id) : { merchantId: STATE.merchants[0]?.id || '', bookingDate: todayStr(), deliveryDate: '', origin: 'Karachi', destinationCity: 'Karachi', codAmount: 0, referenceId: '', consigneeName: '', declaredWeight: 1, verifiedWeight: 1, shippingRevenue: 0, otherRevenue: 0, fulfillmentType: 'OWN', vendor: STATE.vendors[0]?.name || '', thirdPartyCost: 0, routeId: '', riderId: STATE.riders[0]?.id || '', reattempts: 0, rto: false, rtoCost: 0, otherDirectCost: 0, otherDeductions: 0, status: 'Pending', paymentMethod: '', settlementStatus: 'Pending', serviceType: 'COD', shipxPaymentStatus: 'unpaid' };
   if(!base) return;
   if(!STATE.merchants.length){ toast('Add a merchant first', 'err'); if(canDo('add_merchant')) openMerchantForm(); return; }
   if(!STATE.riders.length){ toast('Add a rider first', 'err'); if(canDo('add_rider')) openRiderForm(); return; }
   if(!base.serviceType) base.serviceType = 'COD';
-  if(!base.shipxPaymentStatus) base.shipxPaymentStatus = 'auto';
+  if(!base.shipxPaymentStatus || base.shipxPaymentStatus === 'auto'){ base.shipxPaymentStatus = (base.status === 'RTO') ? 'adjusted' : 'unpaid'; }
   if(!isEdit){ base.bookingDate = todayStr(); base.deliveryDate = base.deliveryDate || ''; }
   else if(!base.bookingDate){ base.bookingDate = todayStr(); }
   const originVal = base.origin || 'Karachi'; const destVal = base.destinationCity || 'Karachi'; const isRepl = base.serviceType === 'Replacement';
@@ -1934,14 +1922,14 @@ function openShipmentForm(id){
         <div style="position:absolute;top:-50px;right:-50px;width:160px;height:160px;background:radial-gradient(circle,rgba(176,217,0,.22) 0%,transparent 70%);border-radius:50%;pointer-events:none"></div>
         <div style="position:relative;display:flex;align-items:center;gap:12px;margin-bottom:18px">
           <div style="width:40px;height:40px;border-radius:11px;background:rgba(176,217,0,.18);display:flex;align-items:center;justify-content:center;color:var(--lime);box-shadow:0 0 16px rgba(176,217,0,.25);flex-shrink:0">${svgIcon('wallet', 20)}</div>
-          <div><div style="font-size:11.5px;font-weight:800;color:var(--lime);text-transform:uppercase;letter-spacing:1px">SHIPX Payment to Merchant</div><div style="font-size:11px;color:#94A3B8;margin-top:2px">Mark this shipment as paid by SHIPX</div></div>
+          <div><div style="font-size:11.5px;font-weight:800;color:var(--lime);text-transform:uppercase;letter-spacing:1px">SHIPX Payment to Merchant</div><div style="font-size:11px;color:#94A3B8;margin-top:2px">Mark this shipment's payment status</div></div>
         </div>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;position:relative;z-index:1">
-          <label class="shipx-pay-opt"><input type="radio" name="shipxPaymentStatus" value="auto" ${base.shipxPaymentStatus==='auto'?'checked':''}><div class="shipx-pay-opt-inner"><div class="shipx-pay-opt-icon">${svgIcon('refresh', 18)}</div><div class="shipx-pay-opt-label">Auto</div><div class="shipx-pay-opt-sub">Use merchant status</div></div></label>
-          <label class="shipx-pay-opt"><input type="radio" name="shipxPaymentStatus" value="paid" ${base.shipxPaymentStatus==='paid'?'checked':''}><div class="shipx-pay-opt-inner"><div class="shipx-pay-opt-icon">${svgIcon('check', 18)}</div><div class="shipx-pay-opt-label">ShipX Paid</div><div class="shipx-pay-opt-sub">Mark as paid</div></div></label>
+          <label class="shipx-pay-opt"><input type="radio" name="shipxPaymentStatus" value="paid" ${base.shipxPaymentStatus==='paid'?'checked':''}><div class="shipx-pay-opt-inner"><div class="shipx-pay-opt-icon">${svgIcon('check', 18)}</div><div class="shipx-pay-opt-label">Paid</div><div class="shipx-pay-opt-sub">ShipX paid merchant</div></div></label>
           <label class="shipx-pay-opt"><input type="radio" name="shipxPaymentStatus" value="unpaid" ${base.shipxPaymentStatus==='unpaid'?'checked':''}><div class="shipx-pay-opt-inner"><div class="shipx-pay-opt-icon">${svgIcon('alert', 18)}</div><div class="shipx-pay-opt-label">Unpaid</div><div class="shipx-pay-opt-sub">Still owed</div></div></label>
+          <label class="shipx-pay-opt"><input type="radio" name="shipxPaymentStatus" value="adjusted" ${base.shipxPaymentStatus==='adjusted'?'checked':''}><div class="shipx-pay-opt-inner"><div class="shipx-pay-opt-icon">${svgIcon('swap', 18)}</div><div class="shipx-pay-opt-label">Adjust</div><div class="shipx-pay-opt-sub">For returns — charges deducted</div></div></label>
         </div>
-        <div style="font-size:11.5px;color:#B4C2D2;margin-top:14px;line-height:1.55;position:relative;background:rgba(255,255,255,.03);padding:10px 14px;border-radius:10px;border-left:3px solid rgba(176,217,0,.4)">${svgIcon('info', 13)} Choosing "ShipX Paid" auto-records a bank payment. "Auto" uses merchant overall status.</div>
+        <div style="font-size:11.5px;color:#B4C2D2;margin-top:14px;line-height:1.55;position:relative;background:rgba(255,255,255,.03);padding:10px 14px;border-radius:10px;border-left:3px solid rgba(176,217,0,.4)">${svgIcon('info', 13)} <b>Paid</b> = ShipX paid merchant (auto-records bank payment for delivered). <b>Unpaid</b> = still owed. <b>Adjust</b> = RTO — charges already deducted from merchant total.</div>
       </div>
 
       <div id="shipPreview"></div>
@@ -1967,7 +1955,7 @@ function saveShipment(id){
   if(!d.merchantId){ toast('Merchant required', 'err'); return; }
   if(!(d.verifiedWeight > 0)){ toast('Weight must be > 0', 'err'); return; }
   if(!d.serviceType) d.serviceType = 'COD';
-  if(!d.shipxPaymentStatus) d.shipxPaymentStatus = 'auto';
+  if(!d.shipxPaymentStatus || d.shipxPaymentStatus === 'auto') d.shipxPaymentStatus = (d.status === 'RTO') ? 'adjusted' : 'unpaid';
   d.rto = d.status === 'RTO'; d.rtoCost = 0;
   let saved;
   if(id){ const idx = STATE.shipments.findIndex(x => x.id === id); if(idx >= 0){ STATE.shipments[idx] = { ...STATE.shipments[idx], ...d }; saved = STATE.shipments[idx]; } logAudit('shipment_update', 'Updated ' + id); }
@@ -1997,12 +1985,12 @@ function deleteVendor(id){ if(!canDo('delete_partner') && !canDo('change_setting
 function openCostCatForm(id){ const isEdit = !!id; if(isEdit && !canDo('edit_cost_category') && !canDo('change_settings')){ denyPerm(); return; } if(!isEdit && !canDo('add_cost_category') && !canDo('change_settings')){ denyPerm(); return; } closeNewMenu(); const base = isEdit ? STATE.costMaster.find(x=>x.id===id) : { category:'', type:'Variable', basis:'Per Shipment' }; if(!base) return; openModal(isEdit?'Edit Category':'Add Category', `<div class="form-grid"><div class="field"><label>Category Name *</label><input name="category" value="${esc(base.category)}" autofocus></div><div class="field"><label>Type</label><select name="type"><option ${base.type==='Fixed Monthly'?'selected':''}>Fixed Monthly</option><option ${base.type==='Variable'?'selected':''}>Variable</option></select></div><div class="field"><label>Basis</label><select name="basis"><option ${base.basis==='Per Shipment'?'selected':''}>Per Shipment</option><option ${base.basis==='Per Day'?'selected':''}>Per Day</option><option ${base.basis==='Per Rider'?'selected':''}>Per Rider</option></select></div></div><div style="display:flex;gap:12px;justify-content:flex-end;margin-top:24px"><button class="btn ghost" onclick="closeModal()">Cancel</button><button class="btn lime" onclick="saveCostCat('${id||''}')">${svgIcon('check', 14)}${isEdit?'Update':'Add'}</button></div>`, 'narrow'); }
 function saveCostCat(id){ const isEdit = !!id; if(isEdit && !canDo('edit_cost_category') && !canDo('change_settings')){ denyPerm(); return; } if(!isEdit && !canDo('add_cost_category') && !canDo('change_settings')){ denyPerm(); return; } const d = readFormData(); if(!d.category?.trim()){ toast('Name required','err'); return; } if(id){ const idx = STATE.costMaster.findIndex(x=>x.id===id); if(idx>=0) STATE.costMaster[idx] = { ...STATE.costMaster[idx], ...d }; } else STATE.costMaster.push({ ...d, id: nextId('C', STATE.costMaster, 2) }); saveState(); refresh(); closeModal(); renderPage(); toast('Saved','ok'); }
 function deleteCostCat(id){ if(!canDo('delete_cost_category') && !canDo('change_settings')){ denyPerm(); return; } const c = STATE.costMaster.find(x => x.id === id); if(!c) return; confirmSmartDelete({ title: 'Delete Cost Category', subject: esc(c.category), message: 'This action cannot be undone.', impacts: [{ type:'info', text:'Safe to delete.' }], confirmLabel: 'Yes, Delete', onConfirm: () => { STATE.costMaster = STATE.costMaster.filter(x => x.id !== id); saveState(); refresh(); renderPage(); toast('Category deleted', 'ok'); } }); }
-function exportShipmentsCSV(){ if(!canDo('export_shipments_csv') && !canDo('export_data')){ denyPerm(); return; } const list = ENGINE.computed; if(!list.length){ toast('Nothing to export', 'err'); return; } const n2 = v => (Number(v) || 0).toFixed(2); const headers = ['ID','Tracking','Merchant','Date','Service','Origin','Destination','COD','Weight','Revenue','Fulfillment','Status','ShipX Paid']; const rows = list.map(s=>{ const st = getShipmentPaymentStatus(s); return [s.id, s.trackingNumber||'', merchantName(s.merchantId).replace(/&amp;/g,'&'), s.bookingDate||'', s.serviceType||'COD', s.origin||'', s.destinationCity||'', n2(s.codAmount), n2(s.verifiedWeight), n2(s.shippingRevenue), s.fulfillmentType, s.status, st.isPaid ? 'Paid' : 'Unpaid']; }); downloadCSV(headers, rows, 'shipx-shipments-' + todayStr()); toast(`Exported ${rows.length}`, 'ok'); }
+function exportShipmentsCSV(){ if(!canDo('export_shipments_csv') && !canDo('export_data')){ denyPerm(); return; } const list = ENGINE.computed; if(!list.length){ toast('Nothing to export', 'err'); return; } const n2 = v => (Number(v) || 0).toFixed(2); const headers = ['ID','Tracking','Merchant','Date','Service','Origin','Destination','COD','Weight','Revenue','Fulfillment','Status','ShipX Paid']; const rows = list.map(s=>{ const st = getShipmentPaymentStatus(s); return [s.id, s.trackingNumber||'', merchantName(s.merchantId).replace(/&amp;/g,'&'), s.bookingDate||'', s.serviceType||'COD', s.origin||'', s.destinationCity||'', n2(s.codAmount), n2(s.verifiedWeight), n2(s.shippingRevenue), s.fulfillmentType, s.status, st.isPaid ? 'Paid' : (st.isAdjusted ? 'Adjusted' : 'Unpaid')]; }); downloadCSV(headers, rows, 'shipx-shipments-' + todayStr()); toast(`Exported ${rows.length}`, 'ok'); }
 function downloadCSV(headers, rows, filename){ const csv = [headers, ...rows].map(r => r.map(v => { const s = String(v==null?'':v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s; }).join(',')).join('\n'); const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = filename + '.csv'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); }
 function openImportDialog(){ if(!canDo('import_csv')){ denyPerm(); return; } closeNewMenu(); openModal('Import CSV', `<div class="info-note">${svgIcon('info', 18)}Required: merchant, booking_date, origin, destination, cod_amount, weight.</div><div class="upload-zone" onclick="document.getElementById('csvFile').click()"><div class="upload-icon">${svgIcon('upload', 26)}</div><div style="font-weight:700">Click to choose CSV</div><input type="file" id="csvFile" accept=".csv" style="display:none" onchange="onCSVSelected(this)"></div><div class="mt20"><div class="field"><label>Or paste CSV</label><textarea id="csvText" rows="7"></textarea></div><div style="display:flex;gap:12px;margin-top:16px;justify-content:flex-end"><button class="btn ghost" onclick="closeModal()">Cancel</button><button class="btn lime" onclick="processCSVImport()">Import</button></div></div>`); }
 function onCSVSelected(input){ const f = input.files[0]; if(f){ const r = new FileReader(); r.onload = e => document.getElementById('csvText').value = e.target.result; r.readAsText(f); } }
 function parseCSV(text){ const rows = []; let row = []; let cell = ''; let inQuote = false; for(let i=0;i<text.length;i++){ const c = text[i]; if(inQuote){ if(c === '"'){ if(text[i+1] === '"'){ cell += '"'; i++; } else inQuote = false; } else cell += c; } else { if(c === '"') inQuote = true; else if(c === ','){ row.push(cell); cell = ''; } else if(c === '\n'){ row.push(cell); rows.push(row); row = []; cell = ''; } else if(c !== '\r') cell += c; } } if(cell || row.length){ row.push(cell); rows.push(row); } return rows; }
-function processCSVImport(){ if(!canDo('import_csv')){ denyPerm(); return; } const txt = document.getElementById('csvText').value.trim(); if(!txt){ toast('Paste CSV first', 'err'); return; } let parsed; try { parsed = parseCSV(txt); } catch(e){ toast('Could not read', 'err'); return; } if(parsed.length < 2){ toast('No data', 'err'); return; } const headers = parsed[0].map(h=>h.toLowerCase().trim()); const idx = {}; headers.forEach((h,i) => idx[h] = i); const required = ['merchant','booking_date','origin','destination','cod_amount','weight']; const missing = required.filter(h => !(h in idx)); if(missing.length){ toast('Missing: ' + missing.join(', '), 'err'); return; } const mNameToId = {}; STATE.merchants.forEach(m => mNameToId[m.name.toLowerCase().trim()] = m.id); let imported = 0, skipped = 0, createdMerchants = 0; for(let i = 1; i < parsed.length; i++){ const row = parsed[i]; if(!row || !row.length || !row[idx.merchant]){ skipped++; continue; } const mName = (row[idx.merchant]||'').trim(); let mId = mNameToId[mName.toLowerCase()]; if(!mId){ const newM = { id: nextId('M', STATE.merchants, 3), name: mName, city: 'Karachi', joinDate: todayStr(), pricing: defaultPricing() }; STATE.merchants.push(newM); mId = newM.id; mNameToId[mName.toLowerCase()] = mId; createdMerchants++; } const bookingDate = (row[idx.booking_date]||'').trim(); const origin = (row[idx.origin]||'').trim() || 'Karachi'; const destination = (row[idx.destination]||'').trim() || origin; const cod = parseFloat(row[idx.cod_amount]) || 0; const weight = parseFloat(row[idx.weight]) || 1; const b = merchantPriceBreakdown(mId, origin, destination, weight); STATE.shipments.push({ id: nextId('SX-', STATE.shipments, 4), trackingNumber: nextTracking(), merchantId: mId, bookingDate: bookingDate || todayStr(), origin, destinationCity: destination, codAmount: cod, verifiedWeight: weight, declaredWeight: weight, shippingRevenue: b ? Math.round(b.total) : 0, otherRevenue: 0, fulfillmentType: 'OWN', riderId: STATE.riders[0]?.id || '', reattempts: 0, status: 'Pending', settlementStatus: 'Pending', serviceType: 'COD', shipxPaymentStatus: 'auto' }); imported++; } saveState(); refresh(); closeModal(); renderPage(); let msg = `Imported ${imported}`; if(createdMerchants) msg += ` · ${createdMerchants} new merchants`; if(skipped) msg += ` · ${skipped} skipped`; toast(msg, imported > 0 ? 'ok' : 'err'); }
+function processCSVImport(){ if(!canDo('import_csv')){ denyPerm(); return; } const txt = document.getElementById('csvText').value.trim(); if(!txt){ toast('Paste CSV first', 'err'); return; } let parsed; try { parsed = parseCSV(txt); } catch(e){ toast('Could not read', 'err'); return; } if(parsed.length < 2){ toast('No data', 'err'); return; } const headers = parsed[0].map(h=>h.toLowerCase().trim()); const idx = {}; headers.forEach((h,i) => idx[h] = i); const required = ['merchant','booking_date','origin','destination','cod_amount','weight']; const missing = required.filter(h => !(h in idx)); if(missing.length){ toast('Missing: ' + missing.join(', '), 'err'); return; } const mNameToId = {}; STATE.merchants.forEach(m => mNameToId[m.name.toLowerCase().trim()] = m.id); let imported = 0, skipped = 0, createdMerchants = 0; for(let i = 1; i < parsed.length; i++){ const row = parsed[i]; if(!row || !row.length || !row[idx.merchant]){ skipped++; continue; } const mName = (row[idx.merchant]||'').trim(); let mId = mNameToId[mName.toLowerCase()]; if(!mId){ const newM = { id: nextId('M', STATE.merchants, 3), name: mName, city: 'Karachi', joinDate: todayStr(), pricing: defaultPricing() }; STATE.merchants.push(newM); mId = newM.id; mNameToId[mName.toLowerCase()] = mId; createdMerchants++; } const bookingDate = (row[idx.booking_date]||'').trim(); const origin = (row[idx.origin]||'').trim() || 'Karachi'; const destination = (row[idx.destination]||'').trim() || origin; const cod = parseFloat(row[idx.cod_amount]) || 0; const weight = parseFloat(row[idx.weight]) || 1; const b = merchantPriceBreakdown(mId, origin, destination, weight); STATE.shipments.push({ id: nextId('SX-', STATE.shipments, 4), trackingNumber: nextTracking(), merchantId: mId, bookingDate: bookingDate || todayStr(), origin, destinationCity: destination, codAmount: cod, verifiedWeight: weight, declaredWeight: weight, shippingRevenue: b ? Math.round(b.total) : 0, otherRevenue: 0, fulfillmentType: 'OWN', riderId: STATE.riders[0]?.id || '', reattempts: 0, status: 'Pending', settlementStatus: 'Pending', serviceType: 'COD', shipxPaymentStatus: 'unpaid' }); imported++; } saveState(); refresh(); closeModal(); renderPage(); let msg = `Imported ${imported}`; if(createdMerchants) msg += ` · ${createdMerchants} new merchants`; if(skipped) msg += ` · ${skipped} skipped`; toast(msg, imported > 0 ? 'ok' : 'err'); }
 
 (async function init(){
   const stored = loadState(); STATE = stored || JSON.parse(JSON.stringify(EMPTY));
